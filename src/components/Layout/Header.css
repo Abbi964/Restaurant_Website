@@ -1,11 +1,11 @@
 .header_card{
-    padding-bottom: 7rem;
+    padding-bottom: 6.2rem;
 }
 
 .nav_bar{
     display: flex;
     justify-content: space-between;
-    background: #762009;
+    background: #8f0f0f;
     padding: 0 10rem 0 10rem;
     align-items: center;
 
@@ -15,43 +15,13 @@ h1{
     color: white;
 }
 
-.header_cart{
-    display: flex;
-    background-color: #601703;
-    padding: 0px 40px 0px 40px;
-    color: white;
-    border-radius: 200px;
-}
-
-.cart_img{
-    height: 24px;
-    margin-top: 25px;
-}
-
-.your_cart{
-    padding: 0 25px 0 5px;
-}
-
-.cart_item_count{
-    background-color: #c51818;
-    padding: 0 13px 0 13px;
-    border-radius: 14px;
-}
-
 .restaurant_banner{
-    aspect-ratio: 16/3.4;
+    aspect-ratio: 16/3.6;
     overflow: hidden;
     width: 100%;
 }
 .restaurant_banner img{
-    width: inherit;
+    width: 104%;
+    transform: rotateZ(-4deg) translateY(-31rem) translateX(-1rem);
 }
 
-.summary{
-    width: 50vw;
-    position: absolute;
-    left: 22vw;
-    top: 37%;
-    color: white;
-    text-align: center;
-}

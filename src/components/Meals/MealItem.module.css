@@ -1,0 +1,18 @@
+.meal_item{
+    border-bottom: 1px solid #b1b0b0;
+    padding-bottom: 2rem;
+    padding-left: 3px;
+}
+
+.meal_item h3{
+    margin-bottom: -17px;
+}
+
+.meal_item p{
+    margin-bottom: -17px;
+    font-style: italic;
+}
+
+.meal_price{
+    color: #c51818
+}
