@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import MealsSummary from "./MealsSummary";
-import MealsList from "./MealsList";
+import MealsList from "./MealsList/MealsList";
 
 function Meals(){
 

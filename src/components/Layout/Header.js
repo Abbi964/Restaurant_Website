@@ -1,6 +1,7 @@
 import React from "react";
 import "./Header.css";
 import HeaderCartBtn from "./HearderCartBtn";
+import mainImg from '../../assets/restaurant_banner.jpg'
 
 function Header() {
   return (
@@ -10,7 +11,7 @@ function Header() {
           <HeaderCartBtn/>
         </nav>
         <div className="restaurant_banner">
-          <img src="/media/restaurant_banner.jpg" alt="restaurant_banner"></img>
+          <img src={mainImg} alt="restaurant_banner"></img>
         </div>
     </header>
   );
