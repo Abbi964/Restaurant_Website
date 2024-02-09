@@ -33,8 +33,8 @@ function Meals(){
 
     return(
         <Fragment>
-            <MealsSummary/>
-            <MealsList items={DUMMY_MEALS}/>
+          <MealsSummary/>
+          <MealsList items={DUMMY_MEALS}/>
         </Fragment>
     )
 }
