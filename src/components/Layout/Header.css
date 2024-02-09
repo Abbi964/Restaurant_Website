@@ -1,3 +1,7 @@
+.header_card{
+    padding-bottom: 7rem;
+}
+
 .nav_bar{
     display: flex;
     justify-content: space-between;
@@ -35,7 +39,7 @@ h1{
 }
 
 .restaurant_banner{
-    aspect-ratio: 16/2;
+    aspect-ratio: 16/3.4;
     overflow: hidden;
     width: 100%;
 }
@@ -43,3 +47,11 @@ h1{
     width: inherit;
 }
 
+.summary{
+    width: 50vw;
+    position: absolute;
+    left: 22vw;
+    top: 37%;
+    color: white;
+    text-align: center;
+}
