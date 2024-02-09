@@ -23,7 +23,16 @@ const CartContextProvider = (props) => {
   }
 
   function removeItemFromCartHandler(id){
+    setItems((currItems)=>{
+        let newItems = currItems.filter((item)=>{
+            return item.id !== id
+        })
+        return newItems
+    })
+  }
 
+  function changeItemsHandler(newItems){
+    setItems(newItems)
   }
 
   //----------------------------------------------------------------------//
@@ -34,7 +43,8 @@ const CartContextProvider = (props) => {
     items : items,
     totalAmount : 0,
     addItem : addItemToCartHandler,
-    removeItem : removeItemFromCartHandler
+    removeItem : removeItemFromCartHandler,
+    changeItems : changeItemsHandler,
   }
 
   return (

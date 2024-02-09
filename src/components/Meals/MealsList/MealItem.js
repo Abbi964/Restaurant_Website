@@ -19,7 +19,7 @@ function MealItem(props){
         let mealObj = result[0]
         // now adding item to cartItems
         cartCtx.addItem({
-            id : Math.random(),
+            id : 'c' + mealObj.id,
             name : mealObj.name,
             price : mealObj.price,
             amount : amountInputRef.current.value,
@@ -36,7 +36,7 @@ function MealItem(props){
             </div>
             <div className={classes.meal_form}>
                 <label htmlFor="meal_amount">Amount</label>
-                <input ref={amountInputRef} type="number" id="meal_amount"/><br/>
+                <input ref={amountInputRef} type="number" min='1' id="meal_amount"/><br/>
                 <button onClick={addItemHandler} type="button">+ Add</button>
             </div>
         </div>
