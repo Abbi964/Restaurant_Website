@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import classes from './HeaderCartBtn.module.css';
-import cartIcon from '../../assets/cart-icon.png'
+import cartIcon from '../../assets/cart-icon.png';
+import Context from "../../context/context";
 
 function HeaderCartBtn(props){
+    // consuming context
+    const ctx = useContext(Context)
 
     return(
-        <button className={classes.header_cart_btn}>
+        <button onClick={ctx.showCart} className={classes.header_cart_btn}>
             <img
               className={classes.cart_img}
               alt="cart-icon"

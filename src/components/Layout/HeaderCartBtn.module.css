@@ -7,6 +7,9 @@
     border: none;
     height: 3rem;
 }
+.header_cart_btn:hover{
+    cursor: pointer;
+}
 
 .cart_img{
     height: 24px;

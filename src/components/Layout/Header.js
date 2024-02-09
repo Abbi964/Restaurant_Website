@@ -3,7 +3,7 @@ import "./Header.css";
 import HeaderCartBtn from "./HearderCartBtn";
 import mainImg from '../../assets/restaurant_banner.jpg'
 
-function Header() {
+function Header(props) {
   return (
     <header className="header">
         <nav className="nav_bar">
