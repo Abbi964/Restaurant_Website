@@ -2,14 +2,14 @@ import React, {Fragment ,useContext} from "react";
 import Header from './components/Layout/Header'
 import Meals from "./components/Meals/Meals";
 import Cart from "./components/Cart/Cart";
-import Context from "./context/context";
+import CartContext from "./Store/cart-context";
 
 function App() {
-  const ctx = useContext(Context)
+  const cartCtx = useContext(CartContext)
 
   return (
     <Fragment>
-      {ctx.isCartVisible && <Cart/>}
+      {cartCtx.isCartVisible && <Cart/>}
       <Header/>
       <main>
         <Meals/>

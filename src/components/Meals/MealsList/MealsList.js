@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import MealItem from "./MealItem";
 import classes from './MealsList.module.css'
+import MealsContext from "../../../Store/meals-context";
 
 function MealsList(props){
-    let content = props.items.map((meal)=>(
+const mealsCtx = useContext(MealsContext)
+
+    let content = mealsCtx.mealsList.map((meal)=>(
         <MealItem 
         key={meal.id}
         id={meal.id}
